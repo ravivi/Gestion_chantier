@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>AZ CONSTRUCTION | Gestion de chantier</title>
+    <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <link href="plugins/jquery-steps/jquery.steps.css" rel="stylesheet">
+    <link href="plugins/jquery-steps/steps.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="plugins/morris/morris.css">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" >
+
+</head>   
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+
+                </a>
+            </div>
+
+            <nav class="navbar-custom">
+                <ul class="navbar-right list-inline float-right mb-0">
+
+                    <li class="dropdown notification-list list-inline-item">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profil</a>
+                                
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i>
+                                    Déconnexion</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu" id="side-menu">
+                        <li class="menu-title">Menu</li>
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="icon-accelerator"></i><span> Tableau de Bord
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-mail-open"></i><span>
+                                    Lieux </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-paper-sheet"></i><span>
+                                    Chantiers </span></a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-pencil-ruler"></i> <span>
+                                    Affectations </span> </a>
+
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Fournisseurs </span> </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Budgets Par Chantier </span> </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Facturations</span> </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-todolist-check"></i><span>
+                                    Etat de dépenses </span></a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-coffee"></i> <span> Taux
+                                    d'Avancement
+                                </span> </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- Start right Content here -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-9">
+                                <h4 class="page-title" style="font-weight: bold;">Chantier KOSSONOU 2</h4>
+                                
+                            </div>
+
+                            <div class="col-sm-3">
+                                <h6>Chef: Mister Mougly</h6>
+                                <h6>Lieu: Odienne</h6>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="page-title-box">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-6">
+                                        <h4 class="page-title">Evolution du chantier</h4>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+        
+                            <div class="row">
+                               
+                                <div class="col-xl-8">
+                                    <div class="card m-b-30">
+                                        <div class="card-body">
+        
+                                            <h4 class="mt-0 header-title mb-4">Area Chart</h4>
+        
+                                            <div id="morris-area-example" class="morris-charts morris-chart-height"></div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+        
+                                <div class="col-xl-4">
+                                    <div class="card m-b-30">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 header-title mb-4">Donut Chart</h4>
+        
+                                            <div id="morris-donut-example" class="morris-charts morris-chart-height"></div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                        </div>
+    
+
+                        <!-- end row -->
+                    </div>
+                    <!-- end page-title -->
+
+                    <hr>
+                    <br>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-9">
+                                <h4 class="page-title">Suivi des Affectations</h4>
+                            </div>
+
+                            <div class="col-sm-12 col-md-3">
+                                <div id="datatable_filter" class="dataTables_filter">
+                                    <input type="search" class="form-control form-control-sm" placeholder="Rechercher une affectation" aria-controls="datatable">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Main d'oeuvre</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-primary">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Materiaux & Fournitures</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-success">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Equipements</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-danger">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-warning text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Main d'oeuvre</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-warning">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Logement Personnel</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-primary">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Carburants</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-success">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Locations</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-danger">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-warning text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Stocks</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-warning">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Sous-traitance</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-primary">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Diverses Taxes</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-success">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Frais de Financement</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-danger">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-warning text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Missions & Financements</h5>
+                                    </div>
+                                    <h5 class="mt-4">300 000</h5>
+                                    <h6>FCFA</h6>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-warning">Ajouter depense</div><span class="float-right">75%</span>
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                    
+                </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- content -->
+
+            
+
+            <footer class="footer">
+                © 2019 - 2020 Stexo <span class="d-none d-sm-inline-block"> - Crafted with <i
+                        class="mdi mdi-heart text-danger"></i> WMCCI</span>.
+            </footer>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+
+    <!--Morris Chart-->
+    <script src="plugins/morris/morris.min.js"></script>
+    <script src="plugins/raphael/raphael.min.js"></script>
+
+    <script src="assets/pages/dashboard.init.js"></script>
+
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+
+
+
+
+
+    <!-- Required datatable js -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="plugins/datatables/jszip.min.js"></script>
+    <script src="plugins/datatables/pdfmake.min.js"></script>
+    <script src="plugins/datatables/vfs_fonts.js"></script>
+    <script src="plugins/datatables/buttons.html5.min.js"></script>
+    <script src="plugins/datatables/buttons.print.min.js"></script>
+    <script src="plugins/datatables/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="plugins/datatables/responsive.bootstrap4.min.js"></script>
+
+
+    <script src="plugins/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+
+
+
+
+    <!-- Datatable init js -->
+    <script src="assets/pages/datatables.init.js"></script>
+
+
+    <script src="plugins/jquery.repeater/jquery.repeater.min.js"></script>
+    <script src="plugins/extra-libs/jquery.repeater/repeater-init.js"></script>
+  
+
+    <script>
+
+
+        $("#example-basic").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                autoFocus: true
+            });
+        
+            // Basic Example with form
+            var form = $("#example-form");
+            form.validate({
+                errorPlacement: function errorPlacement(error, element) { element.before(error); },
+                rules: {
+                    confirm: {
+                        equalTo: "#password"
+                    }
+                }
+            });
+            form.children("div").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                onStepChanging: function(event, currentIndex, newIndex) {
+                    form.validate().settings.ignore = ":disabled,:hidden";
+                    return form.valid();
+                },
+                onFinishing: function(event, currentIndex) {
+                    form.validate().settings.ignore = ":disabled";
+                    return form.valid();
+                },
+                onFinished: function(event, currentIndex) {
+                    alert("Submitted!");
+                }
+            });
+        
+            // Advance Example
+        
+            var form = $("#example-advanced-form").show();
+        
+            form.steps({
+                headerTag: "h3",
+                bodyTag: "fieldset",
+                transitionEffect: "slideLeft",
+                onStepChanging: function(event, currentIndex, newIndex) {
+                    // Allways allow previous action even if the current form is not valid!
+                    if (currentIndex > newIndex) {
+                        return true;
+                    }
+                    // Forbid next action on "Warning" step if the user is to young
+                    if (newIndex === 3 && Number($("#age-2").val()) < 18) {
+                        return false;
+                    }
+                    // Needed in some cases if the user went back (clean up)
+                    if (currentIndex < newIndex) {
+                        // To remove error styles
+                        form.find(".body:eq(" + newIndex + ") label.error").remove();
+                        form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+                    }
+                    form.validate().settings.ignore = ":disabled,:hidden";
+                    return form.valid();
+                },
+                onStepChanged: function(event, currentIndex, priorIndex) {
+                    // Used to skip the "Warning" step if the user is old enough.
+                    if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
+                        form.steps("next");
+                    }
+                    // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
+                    if (currentIndex === 2 && priorIndex === 3) {
+                        form.steps("previous");
+                    }
+                },
+                onFinishing: function(event, currentIndex) {
+                    form.validate().settings.ignore = ":disabled";
+                    return form.valid();
+                },
+                onFinished: function(event, currentIndex) {
+                    alert("Submitted!");
+                }
+            }).validate({
+                errorPlacement: function errorPlacement(error, element) { element.before(error); },
+                rules: {
+                    confirm: {
+                        equalTo: "#password-2"
+                    }
+                }
+            });
+        
+            // Dynamic Manipulation
+            $("#example-manipulation").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                enableAllSteps: true,
+                enablePagination: false
+            });
+        
+            //Vertical Steps
+        
+            $("#example-vertical").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                stepsOrientation: "vertical"
+            });
+        
+            //Custom design form example
+            $(".tab-wizard").steps({
+                headerTag: "h6",
+                bodyTag: "section",
+                transitionEffect: "fade",
+                titleTemplate: '<span class="step">#index#</span> #title#',
+                labels: {
+                    finish: "Submit"
+                },
+                onFinished: function(event, currentIndex) {
+                    swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+        
+                }
+            });
+        
+        
+            var form = $(".validation-wizard").show();
+        
+            $(".validation-wizard").steps({
+                headerTag: "h6",
+                bodyTag: "section",
+                transitionEffect: "fade",
+                titleTemplate: '<span class="step">#index#</span> #title#',
+                labels: {
+                    finish: "Submit"
+                },
+                onStepChanging: function(event, currentIndex, newIndex) {
+                    return currentIndex > newIndex || !(3 === newIndex && Number($("#age-2").val()) < 18) && (currentIndex < newIndex && (form.find(".body:eq(" + newIndex + ") label.error").remove(), form.find(".body:eq(" + newIndex + ") .error").removeClass("error")), form.validate().settings.ignore = ":disabled,:hidden", form.valid())
+                },
+                onFinishing: function(event, currentIndex) {
+                    return form.validate().settings.ignore = ":disabled", form.valid()
+                },
+                onFinished: function(event, currentIndex) {
+                    swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+                }
+            }), $(".validation-wizard").validate({
+                ignore: "input[type=hidden]",
+                errorClass: "text-danger",
+                successClass: "text-success",
+                highlight: function(element, errorClass) {
+                    $(element).removeClass(errorClass)
+                },
+                unhighlight: function(element, errorClass) {
+                    $(element).removeClass(errorClass)
+                },
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element)
+                },
+                rules: {
+                    email: {
+                        email: !0
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>
