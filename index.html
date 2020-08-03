@@ -54,7 +54,7 @@
                             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                 <!-- item-->
                                 <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profil</a>
-
+                                
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i>
                                     Déconnexion</a>
@@ -85,11 +85,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-mail-open"></i><span>
-                                    Lieux </a>
-
-                        </li>
+                      
                         <li>
                             <a href="javascript:void(0);" class="waves-effect"><i class="icon-paper-sheet"></i><span>
                                     Chantiers </span></a>
@@ -151,182 +147,301 @@
                 <div class="container-fluid">
                     <div class="page-title-box">
                         <div class="row align-items-center">
-                            <div class="col-sm-6">
-                                <h4 class="page-title">Enregistrement de Chantier</h4>
+                            <div class="col-sm-10">
+                                <h4 class="page-title">Tableau de Bord</h4>
                             </div>
-
+                            <div class="col-sm-2">
+                            <a href="add_chantier.html"><button type="button" class="btn btn-primary btn-sm waves-effect waves-light"><span><i class="far fa-save"></i></span> Ajouter Un Chantier</button></a>
+                            </div>
                         </div>
                         <!-- end row -->
                     </div>
                     <!-- end page-title -->
-                    <!-- end row -->
+
+                    <div class="row">
+
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Chantiers</h5>
+                                    </div>
+                                    <h3 class="mt-4">10</h3>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Budget Total</h5>
+                                    </div>
+                                    <h3 class="mt-4">10.000.000 Fcfa</h3>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    
+
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Fournisseurs</h5>
+                                    </div>
+                                    <h3 class="mt-4">10</h3>
+                                   
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                     <div class="card-body">
 
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body wizard-content">
-                                    <form action="#" class="validation-wizard wizard-circle m-t-40">
-                                        <!-- Step 1 -->
-                                        <h6>Chantier</h6>
-                                        <section>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="wfirstName2"> Nom du chantier : <span
-                                                                class="danger">*</span> </label>
-                                                        <input type="text" class="form-control required"
-                                                            id="wfirstName2" name="firstName"> </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="wlastName2"> Code : <span
-                                                                class="danger">*</span> </label>
-                                                        <input type="text" class="form-control required" id="wlastName2"
-                                                            name="lastName"> </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="wemailAddress2"> Budget Alloué <span
-                                                                class="danger">*</span> </label>
-                                                        <input type="text" class="form-control required"
-                                                            id="wemailAddress2" name="emailAddress"> </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="wlocation2"> Statut : <span
-                                                                class="danger">*</span> </label>
-                                                        <select class="custom-select form-control required"
-                                                            id="wlocation2" name="location">
-                                                            <option value="">Selectionner un statut</option>
-                                                            <option value="En cours">En cours</option>
-                                                            <option value="Cloturé">Cloturé</option>
-                                                           
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                       
-                                        </section>
-                                        <!-- Step 2 -->
-                                        <h6>Chef de Chantier</h6>
-                                        <section>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="jobTitle2">Nom :</label>
-                                                        <input type="text" class="form-control required" id="jobTitle2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="jobTitle2">Prénom :</label>
-                                                        <input type="text" class="form-control required" id="jobTitle2">
-                                                    </div>
-                                                </div>
-                                              
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="jobTitle2">Numéro :</label>
-                                                        <input type="text" class="form-control required" id="jobTitle2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="jobTitle2">Email :</label>
-                                                        <input type="text" class="form-control required" id="jobTitle2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Ajouter un Chantier</h4>
-                            <div class="repeater-default m-t-30">
-                                <div data-repeater-list="">
-                                    <div data-repeater-item="">
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-3">
-                                                    <label for="name">Nom</label>
-                                                    <input type="text" class="form-control" id="name" placeholder="Nom">
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="email">Code</label>
-                                                    <input type="text" class="form-control" id="email" placeholder="Code">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="wlocation2"> Lieu : <span class="danger">*</span> </label>
-                                                    <select class="custom-select form-control required" id="wlocation2" name="location">
-                                                        <option value="">Selectionner le lieu</option>
-                                                        <option value="India">Korogho</option>
-                                                        <option value="USA">Mankono</option>
-                                                        <option value="Dubai">Odiéné</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="pwd">Budget Alloué</label>
-                                                    <input type="text" class="form-control" id="pwd" placeholder="Budget">
-                                                </div>
-                                               
-                                                <div class="form-group col-md-12">
-                                                    <button class="btn btn-success waves-effect waves-light" type="submit">Enregistrer
-                                                    </button>
-                                                    <button data-repeater-delete="" class="btn btn-danger waves-effect waves-light m-l-10" type="button">Supprimer
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <button data-repeater-create="" class="btn btn-info waves-effect waves-light">Ajouter un nouveau chantier
-                                </button>
-                            </div>
-                        </div>
-                     
+                        <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Chantier</th>
+                                    <th>Lieu</th>
+                                    <th>Budgets</th>
+                                    <th>Code</th>
+                                    <th>Statut</th>
+                                    <th>Facturable</th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="detail-page.html">System Architect</a></td>
+                                    <td>Abengourou</td>
+                                   
+                                    <td>5.000.000</td>
+                                    <td>612</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                               
+                                <tr>
+                                    <td><a href="detail-page.html">Integration Specialist</a></td>
+                                    <td>Adzopé</td>
+                                    
+                                    <td>6.000.000</td>
+                                    <td>55</td>
+                                    <td>Cloturé</td>
+                                    <td>Non</td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>Senior Marketing Designer</td>
+                                    <td>Bingerville</td>
+                                 
+                                    <td>7.000.000</td>
+                                    <td>43</td>
+                                    <td>En-Cours</td>
+                                    <td>Non</td>
+                                </tr>
+                                <tr>
+                                    <td>Regional Director</td>
+                                    <td>Dabou</td>
+                            
+                                    <td>8.000.000</td>
+                                    <td>19</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing Designer</td>
+                                    <td>Bouaké</td>
+                                  
+                                    <td>9.000.000</td>
+                                    <td>663</td>
+                                    <td>Cloturé</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Chief Financial Office (CFO)</td>
+                                    <td>Yamoussoukro</td>
+                                   
+                                    <td>10.000.000</td>
+                                    <td>64</td>
+                                    <td>Cloturé</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Systems Administrator</td>
+                                    <td>Korhogo</td>
+                                  
+                                    <td>15.000.000</td>
+                                    <td>59</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Software Engineer</td>
+                                    <td>Man</td>
+                                  
+                                    <td>20.000.000</td>
+                                    <td>41</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Personnel Lead</td>
+                                    <td>Daloa</td>
+                                   
+                                    <td>25.000.000</td>
+                                    <td>35</td>
+                                    <td>Cloturé</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Development Lead</td>
+                                    <td>Dimbokro</td>
+                                 
+                                    <td>30.000.000</td>
+                                    <td>30</td>
+                                    <td>Cloturé</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Chief Marketing Officer (CMO)</td>
+                                    <td>Abobo</td>
+                                
+                                    <td>35.000.000</td>
+                                    <td>40</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Pre-Sales Support</td>
+                                    <td>Yopougon</td>
+                                    
+                                    <td>40.000.000</td>
+                                    <td>21</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Sales Assistant</td>
+                                    <td>Trechville</td>
+                                   
+                                    <td>45.000.000</td>
+                                    <td>23</td>
+                                    <td>Cloturé</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>Aboisso</td>
+                               
+                                    <td>50.000.000</td>
+                                    <td>47</td>
+                                    <td>Cloturé</td>
+                                    <td>Oui</td>
+                                </tr>
+                                
+                               
+                               
+                                <tr>
+                                    <td>Financial Controller</td>
+                                    <td>Vavoua</td>
+                               
+                                    <td>55.000.000</td>
+                                    <td>62</td>
+                                    <td>En-Cours</td>
+                                    <td>Non</td>
+                                </tr>
+                                
+                               
+                              
+                               
+                               
+                                <tr>
+                                    <td>Systems Administrator</td>
+                                    <td>Lakota</td>
+                                    
+                                    <td>65.000.000</td>
+                                    <td>21</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Developer</td>
+                                    <td>Jacque-ville</td>
+                                   
+                                    <td>70.000.000</td>
+                                    <td>30</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Regional Director</td>
+                                    <td><a href="">Sassandra</a></td>
+                                  
+                                    <td>75.000.000</td>
+                                    <td>51</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail-page.html">CHU de Bongouanou</a></td>
+                                    <td>Bongouanou</td>
+                                    <td>80.000.000</td>
+                                    <td>29</td>
+                                    <td>En-Cours</td>
+                                    <td>Oui</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
                     </div>
 
                 </div>
-                <!-- container-fluid -->
-
+                
             </div>
-            <!-- content -->
 
             <footer class="footer">
-                © 2019 - 2020 Stexo <span class="d-none d-sm-inline-block"> - Crafted with <i
-                        class="mdi mdi-heart text-danger"></i> by Themesdesign</span>.
+                © Copyrihgt-Gestion de Chantier <span class="d-none d-sm-inline-block"> - Crée par World Market Commodities</span>.
             </footer>
 
         </div>
-        <!-- ============================================================== -->
-        <!-- End Right content here -->
-        <!-- ============================================================== -->
+        
 
     </div>
-    <!-- END wrapper -->
-
-    <!-- jQuery  -->
+   
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/metismenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.js"></script>
     <script src="assets/js/waves.min.js"></script>
 
-    <!--Morris Chart-->
+    
     <script src="plugins/morris/morris.min.js"></script>
     <script src="plugins/raphael/raphael.min.js"></script>
 
     <script src="assets/pages/dashboard.init.js"></script>
 
 
-    <!-- App js -->
+   
     <script src="assets/js/app.js"></script>
 
 
@@ -334,10 +449,10 @@
 
 
 
-    <!-- Required datatable js -->
+    
     <script src="plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script>
-    <!-- Buttons examples -->
+
     <script src="plugins/datatables/dataTables.buttons.min.js"></script>
     <script src="plugins/datatables/buttons.bootstrap4.min.js"></script>
     <script src="plugins/datatables/jszip.min.js"></script>
@@ -363,169 +478,169 @@
 
     <script src="plugins/jquery.repeater/jquery.repeater.min.js"></script>
     <script src="plugins/extra-libs/jquery.repeater/repeater-init.js"></script>
-
+  
 
     <script>
 
 
         $("#example-basic").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
-            autoFocus: true
-        });
-
-        // Basic Example with form
-        var form = $("#example-form");
-        form.validate({
-            errorPlacement: function errorPlacement(error, element) { element.before(error); },
-            rules: {
-                confirm: {
-                    equalTo: "#password"
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                autoFocus: true
+            });
+        
+            // Basic Example with form
+            var form = $("#example-form");
+            form.validate({
+                errorPlacement: function errorPlacement(error, element) { element.before(error); },
+                rules: {
+                    confirm: {
+                        equalTo: "#password"
+                    }
                 }
-            }
-        });
-        form.children("div").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
-            onStepChanging: function (event, currentIndex, newIndex) {
-                form.validate().settings.ignore = ":disabled,:hidden";
-                return form.valid();
-            },
-            onFinishing: function (event, currentIndex) {
-                form.validate().settings.ignore = ":disabled";
-                return form.valid();
-            },
-            onFinished: function (event, currentIndex) {
-                alert("Submitted!");
-            }
-        });
-
-        // Advance Example
-
-        var form = $("#example-advanced-form").show();
-
-        form.steps({
-            headerTag: "h3",
-            bodyTag: "fieldset",
-            transitionEffect: "slideLeft",
-            onStepChanging: function (event, currentIndex, newIndex) {
-                // Allways allow previous action even if the current form is not valid!
-                if (currentIndex > newIndex) {
-                    return true;
+            });
+            form.children("div").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                onStepChanging: function(event, currentIndex, newIndex) {
+                    form.validate().settings.ignore = ":disabled,:hidden";
+                    return form.valid();
+                },
+                onFinishing: function(event, currentIndex) {
+                    form.validate().settings.ignore = ":disabled";
+                    return form.valid();
+                },
+                onFinished: function(event, currentIndex) {
+                    alert("Submitted!");
                 }
-                // Forbid next action on "Warning" step if the user is to young
-                if (newIndex === 3 && Number($("#age-2").val()) < 18) {
-                    return false;
+            });
+        
+            // Advance Example
+        
+            var form = $("#example-advanced-form").show();
+        
+            form.steps({
+                headerTag: "h3",
+                bodyTag: "fieldset",
+                transitionEffect: "slideLeft",
+                onStepChanging: function(event, currentIndex, newIndex) {
+                    // Allways allow previous action even if the current form is not valid!
+                    if (currentIndex > newIndex) {
+                        return true;
+                    }
+                    // Forbid next action on "Warning" step if the user is to young
+                    if (newIndex === 3 && Number($("#age-2").val()) < 18) {
+                        return false;
+                    }
+                    // Needed in some cases if the user went back (clean up)
+                    if (currentIndex < newIndex) {
+                        // To remove error styles
+                        form.find(".body:eq(" + newIndex + ") label.error").remove();
+                        form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+                    }
+                    form.validate().settings.ignore = ":disabled,:hidden";
+                    return form.valid();
+                },
+                onStepChanged: function(event, currentIndex, priorIndex) {
+                    // Used to skip the "Warning" step if the user is old enough.
+                    if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
+                        form.steps("next");
+                    }
+                    // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
+                    if (currentIndex === 2 && priorIndex === 3) {
+                        form.steps("previous");
+                    }
+                },
+                onFinishing: function(event, currentIndex) {
+                    form.validate().settings.ignore = ":disabled";
+                    return form.valid();
+                },
+                onFinished: function(event, currentIndex) {
+                    alert("Submitted!");
                 }
-                // Needed in some cases if the user went back (clean up)
-                if (currentIndex < newIndex) {
-                    // To remove error styles
-                    form.find(".body:eq(" + newIndex + ") label.error").remove();
-                    form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+            }).validate({
+                errorPlacement: function errorPlacement(error, element) { element.before(error); },
+                rules: {
+                    confirm: {
+                        equalTo: "#password-2"
+                    }
                 }
-                form.validate().settings.ignore = ":disabled,:hidden";
-                return form.valid();
-            },
-            onStepChanged: function (event, currentIndex, priorIndex) {
-                // Used to skip the "Warning" step if the user is old enough.
-                if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
-                    form.steps("Suivant");
+            });
+        
+            // Dynamic Manipulation
+            $("#example-manipulation").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                enableAllSteps: true,
+                enablePagination: false
+            });
+        
+            //Vertical Steps
+        
+            $("#example-vertical").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                stepsOrientation: "vertical"
+            });
+        
+            //Custom design form example
+            $(".tab-wizard").steps({
+                headerTag: "h6",
+                bodyTag: "section",
+                transitionEffect: "fade",
+                titleTemplate: '<span class="step">#index#</span> #title#',
+                labels: {
+                    finish: "Submit"
+                },
+                onFinished: function(event, currentIndex) {
+                    swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+        
                 }
-                // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
-                if (currentIndex === 2 && priorIndex === 3) {
-                    form.steps("Précedent");
+            });
+        
+        
+            var form = $(".validation-wizard").show();
+        
+            $(".validation-wizard").steps({
+                headerTag: "h6",
+                bodyTag: "section",
+                transitionEffect: "fade",
+                titleTemplate: '<span class="step">#index#</span> #title#',
+                labels: {
+                    finish: "Submit"
+                },
+                onStepChanging: function(event, currentIndex, newIndex) {
+                    return currentIndex > newIndex || !(3 === newIndex && Number($("#age-2").val()) < 18) && (currentIndex < newIndex && (form.find(".body:eq(" + newIndex + ") label.error").remove(), form.find(".body:eq(" + newIndex + ") .error").removeClass("error")), form.validate().settings.ignore = ":disabled,:hidden", form.valid())
+                },
+                onFinishing: function(event, currentIndex) {
+                    return form.validate().settings.ignore = ":disabled", form.valid()
+                },
+                onFinished: function(event, currentIndex) {
+                    swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
                 }
-            },
-            onFinishing: function (event, currentIndex) {
-                form.validate().settings.ignore = ":disabled";
-                return form.valid();
-            },
-            onFinished: function (event, currentIndex) {
-                alert("Submitted!");
-            }
-        }).validate({
-            errorPlacement: function errorPlacement(error, element) { element.before(error); },
-            rules: {
-                confirm: {
-                    equalTo: "#password-2"
+            }), $(".validation-wizard").validate({
+                ignore: "input[type=hidden]",
+                errorClass: "text-danger",
+                successClass: "text-success",
+                highlight: function(element, errorClass) {
+                    $(element).removeClass(errorClass)
+                },
+                unhighlight: function(element, errorClass) {
+                    $(element).removeClass(errorClass)
+                },
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element)
+                },
+                rules: {
+                    email: {
+                        email: !0
+                    }
                 }
-            }
-        });
-
-        // Dynamic Manipulation
-        $("#example-manipulation").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            enableAllSteps: true,
-            enablePagination: false
-        });
-
-        //Vertical Steps
-
-        $("#example-vertical").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
-            stepsOrientation: "vertical"
-        });
-
-        //Custom design form example
-        $(".tab-wizard").steps({
-            headerTag: "h6",
-            bodyTag: "section",
-            transitionEffect: "fade",
-            titleTemplate: '<span class="step">#index#</span> #title#',
-            labels: {
-                finish: "Submit"
-            },
-            onFinished: function (event, currentIndex) {
-                swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
-
-            }
-        });
-
-
-        var form = $(".validation-wizard").show();
-
-        $(".validation-wizard").steps({
-            headerTag: "h6",
-            bodyTag: "section",
-            transitionEffect: "fade",
-            titleTemplate: '<span class="step">#index#</span> #title#',
-            labels: {
-                finish: "Submit"
-            },
-            onStepChanging: function (event, currentIndex, newIndex) {
-                return currentIndex > newIndex || !(3 === newIndex && Number($("#age-2").val()) < 18) && (currentIndex < newIndex && (form.find(".body:eq(" + newIndex + ") label.error").remove(), form.find(".body:eq(" + newIndex + ") .error").removeClass("error")), form.validate().settings.ignore = ":disabled,:hidden", form.valid())
-            },
-            onFinishing: function (event, currentIndex) {
-                return form.validate().settings.ignore = ":disabled", form.valid()
-            },
-            onFinished: function (event, currentIndex) {
-                swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
-            }
-        }), $(".validation-wizard").validate({
-            ignore: "input[type=hidden]",
-            errorClass: "text-danger",
-            successClass: "text-success",
-            highlight: function (element, errorClass) {
-                $(element).removeClass(errorClass)
-            },
-            unhighlight: function (element, errorClass) {
-                $(element).removeClass(errorClass)
-            },
-            errorPlacement: function (error, element) {
-                error.insertAfter(element)
-            },
-            rules: {
-                email: {
-                    email: !0
-                }
-            }
-        })
-    </script>
+            })
+        </script>
 </body>
 
 </html>
