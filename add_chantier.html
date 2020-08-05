@@ -53,10 +53,8 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                 <!-- item-->
-                                <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profil</a>
-
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i>
+                             <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="login.html"><i class="mdi mdi-power text-danger"></i>
                                     Déconnexion</a>
                             </div>
                         </div>
@@ -86,13 +84,9 @@
                             </a>
                         </li>
                       
+                       
                         <li>
-                            <a href="index2.html" class="waves-effect"><i class="icon-paper-sheet"></i><span>
-                                    Chantiers </span></a>
-
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-pencil-ruler"></i> <span>
+                            <a href="affectation.html" class="waves-effect"><i class="icon-pencil-ruler"></i> <span>
                                     Affectations </span> </a>
 
                         </li>
@@ -102,11 +96,7 @@
                                     Fournisseurs </span> </a>
 
                         </li>
-                        <li>
-                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
-                                    Budgets Par Chantier </span> </a>
-
-                        </li>
+                       
                         <li>
                             <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
                                     Facturations</span> </a>
@@ -122,6 +112,14 @@
                                     d'Avancement
                                 </span> </a>
 
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-pencil-ruler"></i><span> Dévis <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="#">Bibliothèque</a></li>
+                                <li><a href="#">Faire un dévis</a></li>
+                                <li><a href="#">Voir tous les Dévis</a></li>
+                            </ul>
                         </li>
 
 
@@ -244,50 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Ajouter un Chantier</h4>
-                            <div class="repeater-default m-t-30">
-                                <div data-repeater-list="">
-                                    <div data-repeater-item="">
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-3">
-                                                    <label for="name">Nom</label>
-                                                    <input type="text" class="form-control" id="name" placeholder="Nom">
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="email">Code</label>
-                                                    <input type="text" class="form-control" id="email" placeholder="Code">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="wlocation2"> Lieu : <span class="danger">*</span> </label>
-                                                    <select class="custom-select form-control required" id="wlocation2" name="location">
-                                                        <option value="">Selectionner le lieu</option>
-                                                        <option value="India">Korogho</option>
-                                                        <option value="USA">Mankono</option>
-                                                        <option value="Dubai">Odiéné</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="pwd">Budget Alloué</label>
-                                                    <input type="text" class="form-control" id="pwd" placeholder="Budget">
-                                                </div>
-                                               
-                                                <div class="form-group col-md-12">
-                                                    <button class="btn btn-success waves-effect waves-light" type="submit">Enregistrer
-                                                    </button>
-                                                    <button data-repeater-delete="" class="btn btn-danger waves-effect waves-light m-l-10" type="button">Supprimer
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <button data-repeater-create="" class="btn btn-info waves-effect waves-light">Ajouter un nouveau chantier
-                                </button>
-                            </div>
-                        </div>
+                      
                      
                     </div>
 

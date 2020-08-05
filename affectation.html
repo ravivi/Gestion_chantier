@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>AZ CONSTRUCTION | Gestion de chantier</title>
+    <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <link href="plugins/jquery-steps/jquery.steps.css" rel="stylesheet">
+    <link href="plugins/jquery-steps/steps.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="plugins/morris/morris.css">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+
+                </a>
+            </div>
+
+            <nav class="navbar-custom">
+                <ul class="navbar-right list-inline float-right mb-0">
+
+
+
+
+
+                    <li class="dropdown notification-list list-inline-item">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="login.html"><i class="mdi mdi-power text-danger"></i>
+                                    Déconnexion</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu" id="side-menu">
+                        <li class="menu-title">Menu</li>
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="icon-accelerator"></i><span> Tableau de Bord
+                                </span>
+                            </a>
+                        </li>
+                      
+                      
+                        <li>
+                            <a href="affectation.html" class="waves-effect"><i class="icon-pencil-ruler"></i> <span>
+                                    Affectations </span> </a>
+
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Fournisseurs </span> </a>
+
+                        </li>
+                     
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Facturations</span> </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-todolist-check"></i><span>
+                                    Etat de dépenses </span></a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-coffee"></i> <span> Taux
+                                    d'Avancement
+                                </span> </a>
+
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-pencil-ruler"></i><span> Dévis <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="#">Bibliothèque</a></li>
+                                <li><a href="#">Faire un dévis</a></li>
+                                <li><a href="#">Voir tous les Dévis</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Enregistrement des Affectations</h4>
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end page-title -->
+                    <!-- end row -->
+                    <div class="card-body">
+
+                      
+                        <div class="card-body">
+                            
+                            <div class="repeater-default m-t-30">
+                                <div data-repeater-list="">
+                                    <div data-repeater-item="">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-3">
+                                                    <label for="name">Nom</label>
+                                                    <input type="text" class="form-control" id="name" placeholder="Nom">
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label for="email">Code</label>
+                                                    <input type="text" class="form-control" id="email" placeholder="Code">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="wlocation2"> Chantier : <span class="danger">*</span> </label>
+                                                    <select class="custom-select form-control required" id="wlocation2" name="location">
+                                                        <option value="">Selectionner le chantier</option>
+                                                        <option value="India">Lycée de Korogho</option>
+                                                        <option value="USA">Cité Administrative</option>
+                                                        <option value="Dubai">Reabilitation Logement</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label for="pwd">Budget Alloué</label>
+                                                    <input type="text" class="form-control" id="pwd" placeholder="Budget">
+                                                </div>
+                                               
+                                                <div class="form-group col-md-12">
+                                                    <button class="btn btn-success waves-effect waves-light" type="submit">Enregistrer
+                                                    </button>
+                                                    <button data-repeater-delete="" class="btn btn-danger waves-effect waves-light m-l-10" type="button">Supprimer
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <button data-repeater-create="" class="btn btn-info waves-effect waves-light">Ajouter une nouvelle affectation
+                                </button>
+                            </div>
+                        </div>
+                     
+                    </div>
+
+                </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- content -->
+
+            <footer class="footer">
+                © 2020 AZ CONSTRUCTION <span class="d-none d-sm-inline-block"> - Créé  par World Market Commodities</span>.
+            </footer>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+
+    <script src="assets/pages/dashboard.init.js"></script>
+
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- Repeater js -->
+
+
+    <script src="plugins/jquery.repeater/jquery.repeater.min.js"></script>
+    <script src="plugins/extra-libs/jquery.repeater/repeater-init.js"></script>
+
+</body>
+
+</html>
