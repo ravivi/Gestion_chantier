@@ -3672,3 +3672,8 @@ table.focus-on tbody tr.focused td {
   padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.dt-buttons .buttons-collection {
+  visibility:  hidden !important;
+}
