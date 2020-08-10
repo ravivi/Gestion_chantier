@@ -14,6 +14,7 @@
     <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
 
 </head>
 
@@ -34,10 +35,6 @@
 
             <nav class="navbar-custom">
                 <ul class="navbar-right list-inline float-right mb-0">
-
-
-
-
 
                     <li class="dropdown notification-list list-inline-item">
                         <div class="dropdown notification-list nav-pro-img">
@@ -144,16 +141,24 @@
                 <div class="container-fluid">
                     <div class="page-title-box">
                         <div class="row align-items-center">
-                            <div class="col-sm-6">
-                                <h4 class="page-title">Timeline</h4>
+                            <div class="col-3">
+                                <h4 class="page-title">Rappots chantiers</h4>
                             </div>
-                            <div class="col-sm-6">
-                                <ol class="breadcrumb float-right">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Stexo</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-                                    <li class="breadcrumb-item active">Timeline</li>
-                                </ol>
-                            </div>
+
+                                <div class="col-3">
+                                    <label for="fromdate">from:</label>
+                                    <input type="date" class="form-control" name="fromdate" id="fromdate">
+                                </div>
+    
+                                <div class="col-3">
+                                    <label for="todate">to:</label>
+                                    <input type="date" class="form-control" name="todate" id="todate">
+                                </div>
+    
+                                <div class="col-3 mt-4">
+                                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                                </div>
+
                         </div>
                         <!-- end row -->
                     </div>
@@ -276,6 +281,8 @@
 
     <!-- jQuery  -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/metismenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.js"></script>
@@ -283,6 +290,22 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+
+    <!-- <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> -->
+
+<script>
+     $('input[name="dates"]').daterangepicker();
+     
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+
+</script>
 
 </body>
 
