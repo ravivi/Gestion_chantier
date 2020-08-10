@@ -120,6 +120,10 @@
         Waves.init();
     },
 
+    //custom
+
+   
+
     //init
     $.MainApp = new MainApp, $.MainApp.Constructor = MainApp
 }(window.jQuery),
