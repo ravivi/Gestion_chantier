@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>BATICHACK | Gestion de chantier</title>
+    <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/logo.png">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+
+                </a>
+            </div>
+
+            <nav class="navbar-custom">
+                <ul class="navbar-right list-inline float-right mb-0">
+
+                    <li class="dropdown notification-list list-inline-item">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                               <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="login.html"><i class="mdi mdi-power text-danger"></i>
+                                    Déconnexion</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu" id="side-menu">
+                        <li class="menu-title">Menu</li>
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="icon-accelerator"></i><span> Tableau de Bord
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="affectation.html" class="waves-effect"><i class="icon-pencil-ruler"></i> <span>
+                                    Affectations </span> </a>
+
+                        </li>
+
+                        <li>
+                            <a href="fournisseurs.html" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Fournisseurs </span> </a>
+
+                        </li>
+                       
+                        <li>
+                            <a href="facturation.html" class="waves-effect"><i class="icon-diamond"></i> <span>
+                                    Facturations</span> </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-todolist-check"></i><span>
+                                    Etat de dépenses </span></a>
+
+                        </li>
+                        <li>
+                            <a href="taux.html" class="waves-effect"><i class="icon-coffee"></i> <span> Taux
+                                    d'Avancement
+                                </span> </a>
+
+                        </li>
+                        <li>
+                            <a href="rapport.html" class="waves-effect"><i class="icon-coffee"></i> <span> Rapport de Chantier
+                                </span> </a>
+
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-pencil-ruler"></i><span> Dévis <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="bibliotheque.html">Bibliothèque</a></li>
+                                <li><a href="#">Faire un dévis</a></li>
+                                <li><a href="#">Voir tous les Dévis</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <h4 class="page-title">Rappots chantiers</h4>
+                            </div>
+
+                                <div class="col-3">
+                                    <label for="fromdate">from:</label>
+                                    <input type="date" class="form-control" name="fromdate" id="fromdate">
+                                </div>
+    
+                                <div class="col-3">
+                                    <label for="todate">to:</label>
+                                    <input type="date" class="form-control" name="todate" id="todate">
+                                </div>
+    
+                                <div class="col-3 mt-4">
+                                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                                </div>
+
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end page-title -->
+
+                    <div class="row ">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body mt-5">
+
+                                    <section id="cd-timeline" class="cd-container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <div class="main-timeline">
+                                                    <div class="timeline">
+                                                        <span class="timeline-icon"></span>
+                                                        <span class="year">2017 - 2019</span>
+                                                        <div class="timeline-content">
+                                                            <h3 class="title">Timeline Event One</h3>
+                                                            <p class="description text-muted">
+                                                                Vestibulum mollis nec lorem eget euismod. Quisque auctor sapien nunc, id feugiat sem finibus convallis. Proin quis libero id odio tincidunt facilisis. Fusce vel elit eu nulla aliquam facilisis vel sit amet nisl. Etiam eu felis nunc. Vivamus egestas ac nulla ac varius. Donec nec fermentum purus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="timeline">
+                                                        <span class="timeline-icon"></span>
+                                                        <span class="year">2018 - 2019</span>
+                                                        <div class="timeline-content">
+                                                            <h3 class="title">Timeline Event Two</h3>
+                                                            <p class="description text-muted">
+                                                                Aenean aliquet, nisl eu ultrices sodales, libero tellus molestie nunc, vitae consequat lectus nisl ac libero. Vivamus mollis, ante eu sagittis rhoncus, neque felis gravida ante, vel fermentum neque neque a nibh. Pellentesque tellus quam, pellentesque ac hendrerit quis, volutpat eget sem.
+                                                            </p>
+                                                            <div class="mt-4">
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light">See more detail</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="timeline">
+                                                        <span class="timeline-icon"></span>
+                                                        <span class="year">2017 - 2019</span>
+                                                        <div class="timeline-content">
+                                                            <h3 class="title">Timeline Event Three</h3>
+                                                            <p class="description text-muted">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat.. <a href="#">Read more</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="timeline">
+                                                        <span class="timeline-icon"></span>
+                                                        <span class="year">2018 - 2020</span>
+                                                        <div class="timeline-content">
+                                                            <h3 class="title">Timeline Event Four</h3>
+                                                            <p class="description text-muted">
+                                                                Consectetur adipiscing elit. Vivamus mattis justo id pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer quis turpis magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu dapibus. Etiam accumsan ornare posuere.
+                                                            </p>
+                                                            <div class="mt-4">
+                                                                <img src="assets/images/small/img-3.jpg" alt="" class="rounded" style="width: 120px;">
+                                                                <img src="assets/images/small/img-4.jpg" alt="" class="rounded" style="width: 120px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="timeline">
+                                                        <span class="timeline-icon"></span>
+                                                        <span class="year">2018 - 2020</span>
+                                                        <div class="timeline-content">
+                                                            <h3 class="title">Timeline Event Five</h3>
+                                                            <p class="description text-muted">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.
+                                                            </p>
+                                                            <div class="mt-4">
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light">See more detail</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="timeline">
+                                                        <span class="timeline-icon"></span>
+                                                        <span class="year">2019 - 2020</span>
+                                                        <div class="timeline-content">
+                                                            <h3 class="title">Timeline Event End</h3>
+                                                            <p class="description text-muted">
+                                                                Consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- content -->
+
+            <footer class="footer">
+                © 2020 BATICHACK <span class="d-none d-sm-inline-block"> - Créé  par World Market Commodities</span>.
+            </footer>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+
+    <!-- <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> -->
+
+<script>
+     $('input[name="dates"]').daterangepicker();
+     
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+
+</script>
+
+</body>
+
+</html>
