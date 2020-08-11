@@ -9,15 +9,12 @@
     <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
     <meta content="Themesdesign" name="author" />
     <link rel="shortcut icon" href="assets/images/logo.png">
-    <!-- Plugins css -->
-    <link href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
-    <link href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link href="../plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
 
 </head>
 
@@ -144,25 +141,24 @@
                 <div class="container-fluid">
                     <div class="page-title-box">
                         <div class="row align-items-center">
-                            <div class="col-12 col-md-6 my-2">
+                            <div class="col-3">
                                 <h4 class="page-title">Rappots chantiers</h4>
                             </div>
 
-                            <div class="col-12 col-md-6 form-group">
-                                <label>Rechercer une periode</label>
-                                <div class="row">
-                                    <div class="mt-2">
-                                        <div class="input-daterange input-group" id="date-range">
-                                            <input type="text" class="form-control" name="start" placeholder="Start Date">
-                                            <input type="text" class="form-control" name="end" placeholder="End Date">
-                                        </div>
-                                    </div>
-                                    <div class="ml-4 mt-2">
-                                        <button type="submit" class="btn btn-block btn-primary">Rechercher</button>
-                                    </div>
+                                <div class="col-3">
+                                    <label for="fromdate">from:</label>
+                                    <input type="date" class="form-control" name="fromdate" id="fromdate">
                                 </div>
-                            </div>
     
+                                <div class="col-3">
+                                    <label for="todate">to:</label>
+                                    <input type="date" class="form-control" name="todate" id="todate">
+                                </div>
+    
+                                <div class="col-3 mt-4">
+                                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                                </div>
+
                         </div>
                         <!-- end row -->
                     </div>
@@ -283,24 +279,33 @@
     </div>
     <!-- END wrapper -->
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/metismenu.min.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/waves.min.js"></script>
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
 
-        <!-- Plugins js -->
-        <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-        <script src="../plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-        <script src="../plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
-        <script src="../plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>   
-        
-        <!-- Plugins Init js -->
-        <script src="assets/pages/form-advanced.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
 
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
-    </body>
+
+    <!-- <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> -->
+
+<script>
+     $('input[name="dates"]').daterangepicker();
+     
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+
+</script>
 
 </body>
 
