@@ -162,47 +162,71 @@
                       
                         <div class="card-body">
                             
-                            <div class="repeater-default m-t-30">
-                                <div data-repeater-list="">
-                                    <div data-repeater-item="">
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-3">
-                                                    <label for="name">Nom</label>
-                                                    <input type="text" class="form-control" id="name" placeholder="Nom">
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="email">Code</label>
-                                                    <input type="text" class="form-control" id="email" placeholder="Code">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="wlocation2"> Chantier : <span class="danger">*</span> </label>
-                                                    <select class="custom-select form-control required" id="wlocation2" name="location">
-                                                        <option value="">Selectionner le chantier</option>
-                                                        <option value="India">Lycée de Korogho</option>
-                                                        <option value="USA">Cité Administrative</option>
-                                                        <option value="Dubai">Reabilitation Logement</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="pwd">Budget Alloué</label>
-                                                    <input type="text" class="form-control" id="pwd" placeholder="Budget">
-                                                </div>
-                                               
-                                                <div class="form-group col-md-12">
-                                                    <button class="btn btn-success waves-effect waves-light" type="submit">Enregistrer
-                                                    </button>
-                                                    <button data-repeater-delete="" class="btn btn-danger waves-effect waves-light m-l-10" type="button">Supprimer
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <hr>
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label>No</label>
+                                        <input type="text" class="form-control" required placeholder="Numero de facture">
+                                    </div>
+    
+                                    <div class="col-md-6 form-group">
+                                        <label>Client</label>
+                                        <select class="form-control">
+                                            <option>Mister DK</option>
+                                            <option>Ndri octove</option>
+                                            <option>Aquilas Lara</option>
+                                            <option>Sekongo A.</option>
+                                            <option>Miss Bamba</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <button data-repeater-create="" class="btn btn-info waves-effect waves-light">Ajouter une nouvelle affectation
-                                </button>
-                            </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="">Date de facture</label>
+                                        <input class="form-control" type="date" value="2011-08-19" id="">
+                                    </div>
+    
+                                    <div class="col-md-6 form-group">
+                                        <label for="">Autre Info</label>
+                                        <input class="form-control" type="text" name="" id="" placeholder="Enter here...">
+                                    </div>
+                                </div>
+
+
+                                <label for="">Elements</label>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead class="thead-default">
+                                            <tr>
+                                                <th>Action</th>
+                                                <th>Designation</th>
+                                                <th>Prix U.</th>
+                                                <th>Qte</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <div class="repeater-default m-t-30">
+                                                    <div data-repeater-list="">
+                                                        <div data-repeater-item="">
+                                                            <th scope="row"> <button data-repeater-delete="" class="btn btn-danger waves-effect waves-light m-l-10" type="button">Del </button> </th>
+                                                            <td><input type="text" class="form-control" name="" id="" placeholder="Enter name here..."></td>
+                                                            <td><input type="text" class="form-control" name="" id="" placeholder="Enter price here..."></td>
+                                                            <td><input type="text" class="form-control" name="" id="" placeholder="Enter qty here..."></td>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row"><button data-repeater-create="" class="btn btn-info waves-effect waves-light">Add</button></th>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
                         </div>
                      
                     </div>
