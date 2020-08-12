@@ -1,189 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>Stexo - Responsive Admin & Dashboard Template | Themesdesign</title>
-        <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
-        <meta content="Themesdesign" name="author" />
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>BATICHECK | Gestion de chantier</title>
+    <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/logo.png">
 
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!-- Begin page -->
-        <div id="wrapper">
-            
-            <!-- Left Sidebar End -->
-            <!-- deleted !!! -->
+    <!-- Begin page -->
+    <div id="wrapper">
 
-                    <div class="container">
-                        <div class="my-3" style="border: 1px solid #3e3e3e; width: 61%; margin: 1% auto;">
-                            <div class="row align-items-center">
-                                <div class="col-sm-12 text-center">
-                                    <h4 class="page-title" style="text-transform: uppercase;">Chantier construction du pont 3</h4>
-                                </div>
-                            </div> <!-- end row -->
-                        </div>
+        <!-- Left Sidebar End -->
+        <!-- deleted !!! -->
 
-                        <div class="page-title-box">
-                            <div class="row align-items-center">
-                                <div class="col-sm-12 text-center">
-                                    <h4 class="page-title" >Dévis quantitatif et estimatifF</h4>
-                                </div>
-                            </div> <!-- end row -->
-                        </div>
-                        <!-- end page-title -->
+        <div class="container">
+            <div class="my-3" style="border: 1px solid #3e3e3e; width: 61%; margin: 1% auto;">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 text-center">
+                        <h4 class="page-title" style="text-transform: uppercase;">Chantier construction du pont 3</h4>
+                    </div>
+                </div> <!-- end row -->
+            </div>
 
-                         <div class="row">
+            <div class="page-title-box">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 text-center">
+                        <h4 class="page-title">Dévis quantitatif et estimatif</h4>
+                    </div>
+                </div> <!-- end row -->
+            </div>
+            <!-- end page-title -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-12">
-                                    <div class="card m-b-30">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="invoice-title">
-                                                        <h4 class="float-right font-16"><strong>Order # 12345</strong></h4>
-                                                        <h3 class="m-t-0">
-                                                            <img src="assets/images/logo.png" alt="logo" height="100"/>
-                                                        </h3>
-                                                    </div>
-                                                    <hr>
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <address>
-                                                               BatiCheck SARL<br>
-                                                                Abidjan, Cocody Angre 7e tranche<br>
-                                                                support@baticheck.co<br>
-                                                                +001 97097 440 785 1
-                                                            </address>
-                                                        </div>
-                                                        <div class="col-6 text-right">
-                                                            <!-- <address>
+                                    <div class="invoice-title">
+                                        <h4 class="float-right font-16"><strong>Devis # 12345</strong></h4>
+                                        <h3 class="m-t-0">
+                                            <img src="assets/images/logo.png" alt="logo" height="100" />
+                                        </h3>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <address>
+                                                BatiCheck SARL<br>
+                                                Abidjan, Cocody Angre 7e tranche<br>
+                                                support@baticheck.co<br>
+                                                +225 23 99 09 99
+                                            </address>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <address>
+                                                <strong> Date:</strong><br>
+                                                <script>
+                                                    var today = new Date();
+                                                    var dd = String(today.getDate()).padStart(2, '0');
+                                                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                                    var yyyy = today.getFullYear();
+
+                                                    today = mm + '/' + dd + '/' + yyyy;
+                                                    document.write(today);
+                                                    
+                                                </script><br><br>
+                                            </address>
+                                            <!-- <address>
                                                                 <strong>Shipped To:</strong><br>
                                                                 Kenny Rigdon<br>
                                                                 1234 Main<br>
                                                                 Apt. 4B<br>
                                                                 Springfield, ST 54321
                                                             </address> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-6 m-t-30">
-                                                            
-                                                        </div>
-                                                        <div class="col-6 m-t-30 text-right">
-                                                            <address>
-                                                                <strong> Date:</strong><br>
-                                                                October 7, 2016<br><br>
-                                                            </address>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-            
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="panel panel-default">
-                                                        <div class="p-2">
-                                                            <h3 class="panel-title font-20"><strong>Récapitulatif du Dévis</strong></h3>
-                                                        </div>
-                                                        <div class="">
-                                                            <div class="table-responsive">
-                                                                <table class="table">
-                                                                    <thead>
-                                                                    <tr>
-                                                                        <td><strong>Item</strong></td>
-                                                                        <td class="text-center"><strong>Price</strong></td>
-                                                                        <td class="text-center"><strong>Quantity</strong>
-                                                                        </td>
-                                                                        <td class="text-right"><strong>Totals</strong></td>
-                                                                    </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                    <!-- foreach ($order->lineItems as $line) or some such thing here -->
-                                                                    <tr>
-                                                                        <td>BS-200</td>
-                                                                        <td class="text-center">$10.99</td>
-                                                                        <td class="text-center">1</td>
-                                                                        <td class="text-right">$10.99</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>BS-400</td>
-                                                                        <td class="text-center">$20.00</td>
-                                                                        <td class="text-center">3</td>
-                                                                        <td class="text-right">$60.00</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>BS-1000</td>
-                                                                        <td class="text-center">$600.00</td>
-                                                                        <td class="text-center">1</td>
-                                                                        <td class="text-right">$600.00</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="thick-line"></td>
-                                                                        <td class="thick-line"></td>
-                                                                        <td class="thick-line text-center">
-                                                                            <strong>Subtotal</strong></td>
-                                                                        <td class="thick-line text-right">$670.99</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="no-line"></td>
-                                                                        <td class="no-line"></td>
-                                                                        <td class="no-line text-center">
-                                                                            <strong>Shipping</strong></td>
-                                                                        <td class="no-line text-right">$15</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="no-line"></td>
-                                                                        <td class="no-line"></td>
-                                                                        <td class="no-line text-center">
-                                                                            <strong>Total</strong></td>
-                                                                        <td class="no-line text-right"><h4 class="m-0">2 150 000 F CFA</h4></td>
-                                                                    </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-            
-                                                            <div class="d-print-none mo-mt-2">
-                                                                <div class="float-right">
-                                                                    <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"></i> IMPRIMER</a>
-                                                                    <a href="javascript:window.history.back();" class="btn btn-primary waves-effect waves-light">RETOUR</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-            
-                                                </div>
-                                            </div> <!-- end row -->
-            
                                         </div>
                                     </div>
-                                </div> <!-- end col -->
-                            </div> <!-- end row -->     
-                        
+                                    <div class="row">
+                                        <div class="col-6 m-t-30">
+
+                                        </div>
+                                        <div class="col-6 m-t-30 text-right">
+                                            <!-- <address>
+                                                <strong> Date:</strong><br>
+                                                <script>
+                                                    var today = new Date();
+                                                    var dd = String(today.getDate()).padStart(2, '0');
+                                                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                                    var yyyy = today.getFullYear();
+
+                                                    today = mm + '/' + dd + '/' + yyyy;
+                                                    document.write(today);
+                                                    
+                                                </script><br><br>
+                                            </address> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="panel panel-default">
+                                        <div class="p-2">
+                                            <h3 class="panel-title font-20"><strong>Récapitulatif du Dévis</strong></h3>
+                                        </div>
+                                        <div class="">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td><strong>Désignation</strong></td>
+                                                            <td class="text-center"><strong>Prix</strong></td>
+                                                            <td class="text-center"><strong>Quantité</strong>
+                                                            </td>
+                                                            <td class="text-right"><strong>Total</strong></td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- foreach (FCFAorder->lineItems as FCFAline) or some such thing here -->
+                                                        <tr>
+                                                            <td>Installation et repli de chantier </td>
+                                                            <td class="text-center">300 000 FCFA</td>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-right">300 000 FCFA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Transport de matériaux de construction</td>
+                                                            <td class="text-center">500 000 FCFA</td>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-right">500 000 FCFA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nettoyage, décapage, préparation du terrain </td>
+                                                            <td class="text-center">150 FCFA</td>
+                                                            <td class="text-center">973</td>
+                                                            <td class="text-right">145 950 FCFA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Fouille pour fondation </td>
+                                                            <td class="text-center">1 200 FCFA</td>
+                                                            <td class="text-center">65,12</td>
+                                                            <td class="text-right">78 144 FCFA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="thick-line"></td>
+                                                            <td class="thick-line"></td>
+                                                            <td class="thick-line text-center">
+                                                                <strong>Montant HT</strong></td>
+                                                            <td class="thick-line text-right">1 024 094 FCFA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line text-center">
+                                                                <strong>Taux de TVA</strong></td>
+                                                            <td class="no-line text-right">20%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line text-center">
+                                                                <strong>Montant de la TVA</strong></td>
+                                                            <td class="no-line text-right">204 818,80 FCFA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line text-center">
+                                                                <strong>Montant TTC</strong></td>
+                                                            <td class="no-line text-right">
+                                                                <h4 class="m-0">1 228 912,80 FCFA</h4>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="d-print-none mo-mt-2">
+                                                <div class="float-right">
+                                                    <a href="javascript:window.print()"
+                                                        class="btn btn-success waves-effect waves-light"><i
+                                                            class="fa fa-print"></i> IMPRIMER</a>
+                                                    <a href="javascript:window.history.back();"
+                                                        class="btn btn-primary waves-effect waves-light">RETOUR</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end row -->
+
+                        </div>
                     </div>
+                </div> <!-- end col -->
+            </div> <!-- end row -->
 
         </div>
-        <!-- END wrapper -->
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/metismenu.min.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/waves.min.js"></script>
+    </div>
+    <!-- END wrapper -->
 
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
-        
-    </body>
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+</body>
 
 </html>
