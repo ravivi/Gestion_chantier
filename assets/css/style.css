@@ -1,48 +1,74 @@
-/*
- Template Name: Stexo - Responsive Bootstrap 4 Admin Dashboard
- Author: Themesdesign
- Website: www.themesdesign.in
- File: Main Css File
-*/
-/* ============
-TABLES OF CSS
----------------
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-01. General
-02. Bootstrap-custom
-03. Helper
-04. Waves Effect
-05. Demo Only
-06. Menu
-07. Buttons
-08. Cards
-09. Email
-10. Calender
-11. Ecommerce
-12. Project
-13. Alerts
-14. Pagination
-15. Popover & Tooltip
-16. Rangeslider
-17. Sweet alert
-18. Tab & Accordion
-19. Form Elements
-20. Form Validation
-21. Form advanced
-22. Form editor
-23. Form summernote
-24. Form upload
-25. Form wizard
-26. Chart
-27. Tables
-28. widgets
-29. Maps
-30. Timeline
-31. Invoice
-32. Pricing
-33. Extra pages
-34. Account pages
-*/
+.switch input{
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 /* ==============
   General
