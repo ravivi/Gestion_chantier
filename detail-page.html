@@ -142,10 +142,11 @@
                 <div class="container-fluid">
                     <div class="page-title-box">
                         <div class="row justify-content-between">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <div class="card p-4">
                                     <h4 class="page-title" style="font-weight: bold;">CHU de Bongouanou</h4>
                                     <h6>Budget: 50 000 000 F CFA</h6>
+                                    <h6 style="color: red;">Budget Actuel: 23 120 100 F CFA</h6>
                                 </div>
                             </div>
 
@@ -228,13 +229,99 @@
                             <div class="card">
                                 <div class="card-heading p-4">
                                     <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
+                                        <i class="mdi mdi-cube-outline bg-success  text-white"></i>
                                     </div>
                                     <div>
                                         <h5 class="font-16">Main d'oeuvre</h5>
                                     </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> 
+                                        <button type="button" class="btn btn-sm btn-outline-success waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm"> 
+                                            Ajouter depense
+                                        </button>
+                                        <span class="float-right">75%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-success  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Carburant</h5>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%"
+                                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> 
+                                        <button type="button" class="btn btn-sm btn-outline-success waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm"> 
+                                            Ajouter depense
+                                        </button>
+                                        <span class="float-right">65%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-warning  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Logement</h5>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
+                                    <div class="progress mt-4" style="height: 4px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-2 mb-0"> 
+                                        <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm"> 
+                                            Ajouter depense
+                                        </button>
+                                        <span class="float-right">75%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-heading p-4">
+                                    <div class="mini-stat-icon float-right">
+                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-16">Materiaux & fourniture</h5>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
                                     <div class="progress mt-4" style="height: 4px;">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -254,67 +341,25 @@
                             <div class="card">
                                 <div class="card-heading p-4">
                                     <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
+                                        <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
                                     </div>
                                     <div>
-                                        <h5 class="font-16">Materiaux & Fournitures</h5>
+                                        <h5 class="font-16">Equipement</h5>
                                     </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
                                     <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-success">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Equipements</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-danger">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-buffer bg-warning text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Main d'oeuvre</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-warning">Ajouter depense</div><span class="float-right">75%</span>
-                                       
+                                    <p class="text-muted mt-2 mb-0"> 
+                                        <button type="button" class="btn btn-sm btn-outline-primary waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm"> 
+                                            Ajouter depense
+                                        </button>
+                                        <span class="float-right">75%</span>
                                     </p>
                                 </div>
                             </div>
@@ -327,87 +372,22 @@
                                         <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
                                     </div>
                                     <div>
-                                        <h5 class="font-16">Logement Personnel</h5>
+                                        <h5 class="font-16">Location</h5>
                                     </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
                                     <div class="progress mt-4" style="height: 4px;">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-primary">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Carburants</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-success">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Locations</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-danger">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-buffer bg-warning text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Stocks</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-warning">Ajouter depense</div><span class="float-right">75%</span>
-                                       
+                                    <p class="text-muted mt-2 mb-0"> 
+                                        <button type="button" class="btn btn-sm btn-outline-primary waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm"> 
+                                            Ajouter depense
+                                        </button>
+                                        <span class="float-right">75%</span>
                                     </p>
                                 </div>
                             </div>
@@ -420,87 +400,22 @@
                                         <i class="mdi mdi-cube-outline bg-primary  text-white"></i>
                                     </div>
                                     <div>
-                                        <h5 class="font-16">Sous-traitance</h5>
+                                        <h5 class="font-16">Stock</h5>
                                     </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
+                                    <br>
+                                    <br>
+                                    <span class="mt-4 font-weight-bold">Budget: 300 000 F</span> <br>
+                                    <span class="mt-4 font-weight-bold">Budget Actuel: <span class="text-danger">230 100 F </span> </span>
                                     <div class="progress mt-4" style="height: 4px;">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-primary">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-briefcase-check bg-success text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Diverses Taxes</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-success">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-buffer bg-danger text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Frais de Financement</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-danger">Ajouter depense</div><span class="float-right">75%</span>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="card">
-                                <div class="card-heading p-4">
-                                    <div class="mini-stat-icon float-right">
-                                        <i class="mdi mdi-buffer bg-warning text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="font-16">Missions & Financements</h5>
-                                    </div>
-                                    <h5 class="mt-4">300 000</h5>
-                                    <h6>FCFA</h6>
-                                    <div class="progress mt-4" style="height: 4px;">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <p class="text-muted mt-2 mb-0"> <div class="btn btn-sm btn-outline-warning">Ajouter depense</div><span class="float-right">75%</span>
-                                       
+                                    <p class="text-muted mt-2 mb-0"> 
+                                        <button type="button" class="btn btn-sm btn-outline-primary waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm"> 
+                                            Ajouter depense
+                                        </button>
+                                        <span class="float-right">75%</span>
                                     </p>
                                 </div>
                             </div>
