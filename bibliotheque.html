@@ -565,15 +565,20 @@
                                 <form action="" method="post">
                                     <input class="form-control" type="" name="depense" id="depense" placeholder="Entité"> <br>
                                     
-
                                     <input class="form-control" type="" name="depense" id="depense" placeholder="Prix Unitaire"> <br>
 
-                                    <input class="form-control" type="" name="depense" id="depense" placeholder="Unite"> <br>
+                                    <select class="form-control">
+                                        <option>Selectionner unité</option>
+                                        <option>m3</option>
+                                        <option>m²</option>
+                                        <option>ml</option>
+                                    </select>
+                                    <br>
                                     
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Désignation"></textarea><br>
+                                    <textarea name="" id="" class="form-control" cols="20" rows="5" placeholder="Désignation"></textarea><br>
 
                                     <div class="row justify-content-center">
-                                        <button type="submit" class="btn btn-primary mt-4">
+                                        <button type="submit" class="btn btn-primary btn-block m-3">
                                             Ajouter
                                         </button>
                                     </div>
