@@ -197,8 +197,8 @@
                                                     REPLI DU CHANTIER</td>
                                                 <td>Installation et repli de chantier </td>
                                                 <td>300 000</td>
-                                                <td><button type="button" class="btn btn-success">Modifier</button></td>
-                                               
+                                                <td><button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".modal-edit-biblio">Modifier</button></td>
+
                                             </tr>
                                             <tr>
                                                 <td>INSTALLATION, APPROVIONNEMENT ET <br>
@@ -478,8 +478,8 @@
                                             <tr>
                                                 <td>BADIGEON - PEINTURE </td>
                                                 <td> Badigeon à la chaux sur enduits en élevation </td>
-                                                <td>550/m²</td>
-                                                <td><button type="button" class="btn btn-success">Modifier</button></td>
+                                                <td>550 F/m²</td>
+                                                <td><button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".modal-edit-biblio">Modifier</button></td>
                                                
                                             </tr>
                                             <!--  -->
@@ -548,6 +548,32 @@
 
                 </div>
                 <!-- content -->
+
+
+                <div class="modal fade modal-edit-biblio" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="mySmallModalLabel"></h5>Ajouter depense</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post">
+                                    <input class="form-control" type="number" name="depense" id="depense" placeholder="Ajouter la dépense">
+                                    
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn btn-primary mt-4">
+                                            Ajouter
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
 
                 <footer class="footer">
                     © 2020 BATICHECK <span class="d-none d-sm-inline-block"> - Créé  par World Market Commodities</span>.

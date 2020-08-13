@@ -3700,6 +3700,17 @@ table.focus-on tbody tr.focused td {
 /*# sourceMappingURL=style.css.map */
 
 
+/**************** WMC style ************/
+
 .dt-buttons .buttons-collection {
   visibility:  hidden !important;
+}
+
+@media print {
+  body {
+    background-color: yellow;
+  }
+  thead tr {
+    background-color: red !important;
+  }
 }
